@@ -1,0 +1,312 @@
+html{
+  scroll-behavior: smooth;
+}
+.footer{
+    max-width: 100%;
+    height: 640px;
+    background-color: #040915;
+}
+
+
+
+
+.footer-call {
+  -ms-transform: rotate(-45deg); 
+  transform: rotate(-45deg);
+  color: white;
+  position: absolute;
+  top: 761.2%;
+  left: 6.5%;
+  font-size: 35px;
+  opacity: 0.7;
+}
+
+
+.footer-top h1 {
+    position: absolute;
+    top: 760.3%;
+    left: 9.5%;
+    font-size: 19px;
+    font-weight: 100;
+    color: white;
+}
+.footer-top a {
+    position: absolute;
+    top: 764.7%;
+    left: 9.5%;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.footer .footer-top a:hover{
+    color: #fddb00;
+    text-decoration: underline;
+}
+
+
+
+
+.footer-mail{
+  color: white;
+  position: absolute;
+  top: 774.2%;
+  left: 6.5%;
+  font-size: 35px;
+  opacity: 0.7;
+}
+
+
+
+.footer-top h2 {
+    position: absolute;
+    top: 774.2%;
+    left: 10%;
+    font-size: 19px;
+    font-weight: 100;
+    color: white;
+}
+
+.mail-link a {
+    position: absolute;
+    top: 778.3%;
+    left: 10%;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    font-family: sans-serif;
+}
+
+.mail-link a:hover{
+  color: #fddb00;
+}
+
+.footer-location{
+  color: white;
+  position: absolute;
+  top: 786.7%;
+  left: 6.5%;
+  font-size: 35px;
+  opacity: 0.7;
+}
+.footer-location .map-dot {
+  height: 14px;
+  width: 14px;
+  background-color: #040915;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 26%;
+}
+
+.footer-top h3 {
+    position: absolute;
+    top: 787.2%;
+    left: 9.5%;
+    font-size: 19px;
+    font-weight: 100;
+    color: white;
+}
+
+.footer-top p{
+    position: absolute;
+    top: 792.2%;
+    left: 9.5%;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    font-family: sans-serif;
+}
+
+.footer-top p:hover{
+  color: #fddb00;    
+}
+
+
+
+
+
+.footer-mid h1{
+  position: absolute;
+  top: 750.2%;
+  left: 6%;
+  font-size: 22.5px;
+  font-weight: 500;
+  color: white;
+}
+
+.footer-mid h2{
+  position: absolute;
+  top: 750.2%;
+  left: 30.5%;
+  font-size: 22.5px;
+  font-weight: 500;
+  color: white;
+}
+.footer-mid h3{
+  position: absolute;
+  top: 750.2%;
+  left: 56%;
+  font-size: 22.5px;
+  font-weight: 500;
+  color: white;
+}
+
+.footer-services ul{
+  position: absolute;
+  top: 758.2%;
+  left: 30.5%;
+  list-style: none;
+  line-height: 58px;
+}
+
+.footer-services li{
+  color: white;
+  text-decoration: none;
+    
+}
+
+.footer-services li a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500; 
+}
+
+.footer-services li a:hover{
+
+  color: #fddb00;
+
+}
+
+.footer-about ul{
+  position: absolute;
+  top: 758.2%;
+  left: 56%;
+  list-style: none;
+  line-height: 58px;
+}
+
+.footer-about li{
+  color: white;
+  text-decoration: none;
+    
+}
+
+.footer-about li a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif; 
+}
+
+.footer-about li a:hover{
+
+  color: #fddb00;
+
+}
+
+.footer-mid img{
+    width: 270px;
+    height: 90px;
+    position: absolute;
+    top: 747.2%;
+    left: 75%;
+}
+
+
+.footer-about-p p{
+  width: 310px;
+  position: absolute;
+  top: 763.2%;
+  left: 75%;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+
+}
+
+.footer-social{
+  color: white;
+  position: absolute;
+  top: 787.2%;
+  left: 75%;
+}
+
+.footer-social a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  opacity: 0.7;
+  
+}
+
+.footer-social a:hover{
+  opacity: 1;
+  color: #fddb00;
+}
+
+.footer-line2 {
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 809.2%;
+    left: 0%;
+    opacity: 0.1;
+}
+
+.footer-button{
+  width: 60px;
+  height: 59px;
+  background-color: #fddb00;
+  position: absolute;
+  top: 805.2%;
+  left: 46.5%;
+  border-radius: 3px;
+}
+
+
+
+.footer-button h1{
+   color: white;
+   font-size: 27px;
+   font-weight: 100;
+   align-items: center;
+   position: relative;
+   top: 14%;
+   left: 32%; 
+}
+
+.copyrights{
+  position: absolute;
+  top: 811.2%;
+  left: 5%;
+}
+
+.copyrights p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.8;
+
+}
+
+.copyrights a{
+  text-decoration: none;
+    color: white;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 1;
+  position: absolute;
+  top: 0%;
+  left: 102%;
+}
+
+.copyrights a:hover{
+  color:#fddb00;
+  text-decoration: underline;
+
+}

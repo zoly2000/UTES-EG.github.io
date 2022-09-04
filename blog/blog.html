@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	  <link rel = "icon" href = "utes icon.png" 
+        type = "image/x-icon">
+
+    <link rel="stylesheet" href="blog-page-style.css">
+    <link rel="stylesheet" href="blog-top-style.css">
+    <link rel="stylesheet" href="blog-footer.css">
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://kit.fontawesome.com/e49a699415.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body style="background-color: #fbfbfb">
+
+
+	<!-- start -->
+
+   <nav class="navbar">
+    <div class="content">
+
+      <div class="logo">
+
+        <a href="file:///C:/Users/omars/Desktop/UTES/new%20website/home.html">
+         <img alt="UTES" src="web.png"
+         width="70" height="75">
+      </a>
+
+
+      </div>
+
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="../home.html">Home</a></li>
+
+        <li><a href="../about/about-page.html">About</a></li>
+
+        <li><a href="../service/service-page.html">Services</a></li>
+
+        <li><a href="../products/products-page.html">Products</a></li>
+
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="#"><i class="fa fa-globe" style="font-size: 23px;"></i></a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+    <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+<br><br><br><br> 
+
+<div class="blogBanner">
+
+  <img src="towers.png">
+
+  <h2>Blog & News</h2>
+
+ </div>
+
+
+<div class="blog-top">
+  
+  <div class="Btop-cont1-img">
+    <img src="blog1.jpg">
+  </div>
+
+  <div class="Btop-cont1-desc">
+
+    <h1 id="calender">
+      <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;
+      <h2 id="date"> March 2, 2021</h2>
+    </h1>
+
+    <h1 id="user">
+    <i class="fa fa-user" aria-hidden="true"></i>
+    <h3 id="admin">Admin</h3>
+    </h1>
+
+    <h1 id="desc-head">Advantages of Lithium battery </h1>
+
+    <p id="desc-p">Lithium Iron Phosphate Battery is a rechargeable types of battery which features lithium ions that moves from the negative electrode to the positive electrode during discharge and comes back to its original points while charging.[...]</p>
+
+    <a href="file:///C:/Users/omars/Desktop/UTES/new%20website/blog/blog-pages/blog1.html" id="read-more">Read More</a>
+
+  </div>
+
+</div>
+
+
+  <div class="Btop-cont2-img">
+    <img src="rere.jpg">
+  </div>
+
+<div class="Btop-cont2-desc">
+
+    <h1 id="calender">
+      <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;
+      <h2 id="date"> June 25, 2021</h2>
+    </h1>
+
+    <h1 id="user">
+    <i class="fa fa-user" aria-hidden="true"></i>
+    <h3 id="admin">Admin</h3>
+    </h1>
+
+    <h1 id="desc-head">This is a blog test </h1>
+
+    <p id="desc-p">zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli [...]</p>
+
+    <a href="#" id="read-more">Read More</a>
+
+  </div>
+
+<div class="Btop-cont3-img">
+  <img src="jaja.jpg">
+</div>
+
+<div class="Btop-cont3-desc">
+
+    <h1 id="calender">
+      <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;
+      <h2 id="date"> June 25, 2021</h2>
+    </h1>
+
+    <h1 id="user">
+    <i class="fa fa-user" aria-hidden="true"></i>
+    <h3 id="admin">Admin</h3>
+    </h1>
+
+    <h1 id="desc-head">This is a blog test </h1>
+
+    <p id="desc-p">zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli zoli [...]</p>
+
+    <a href="#" id="read-more">Read More</a>
+
+  </div>
+
+  <a href="#">
+  <div class="num-button1">
+    <h2>1</h2>
+  </div>
+</a>
+  
+  <a href="#">
+    <div class="num-button2">
+    <h2>2</h2>
+  </div>
+  </a>
+
+  <a href="#">
+  <div class="num-button3">
+    <h2>3</h2>
+  </div>
+  </a>
+
+</div>
+
+
+
+  <!-- footer -->
+
+<div class="footer">
+
+  <div class="footer-top">
+
+    <div class="footer-call">
+      <i class="fa fa-volume-control-phone"></i>
+
+    </div>
+
+    <h1>Phone Inquiry</h1>
+    <a href="tel:+201025087333">(+20) 102 508 7333</a>
+
+
+
+    <div class="footer-mail">
+      <i class="fa fa-envelope"></i>
+    </div>
+
+    <h2>Send Email</h2>
+    
+    <div class="mail-link">
+      <a href = "mailto: ahabieb@utesegypt.com">ahabieb@utesegypt.com</a>
+    </div>
+
+    <div class="footer-location">
+
+      <i class="fa fa-map-marker"></i>
+      <span class="map-dot"></span>
+    </div>
+
+    <h3>Visit The Office</h3>
+    <p>18 Shawky Abd Rabo st. Naser City</p>
+    
+  </div>
+
+  
+
+  <div class="footer-mid">
+    
+
+    <h1>Contact-Us</h1>
+
+    <h2>Our Services</h2>
+
+    <h3>About-US</h3>
+
+    <div class="footer-services">
+
+
+      <ul>
+        <li><i class="fa fa-arrow-right"></i><a href="#">
+ &nbsp;&nbsp;power equipment supplying</li></a>
+
+        <li><i class="fa fa-arrow-right"></i><a href="#">
+ &nbsp;&nbsp;Power networking support</li></a>
+
+        <li><i class="fa fa-arrow-right"></i><a href="#">
+ &nbsp;&nbsp;Battery testing</li></a>
+
+        <li><i class="fa fa-arrow-right"></i><a href="#">
+ &nbsp;&nbsp;maintenance</li></a>
+
+        <li><i class="fa fa-arrow-right"></i><a href="#">
+ &nbsp;&nbsp;power system installation</li></a>
+      </ul>
+      
+    </div>
+
+    <div class="footer-about">
+
+            <ul>
+        <li><i class="fa fa-arrow-right"></i><a href="#who-section">
+ &nbsp;&nbsp;Who we are?</li></a>
+
+        <li><i class="fa fa-arrow-right"></i><a href="#VissionMission-section">
+ &nbsp;&nbsp;Our Vision</li></a>
+
+        <li><i class="fa fa-arrow-right"></i><a href="#VissionMission-section">
+ &nbsp;&nbsp;Mission Statement</li></a>
+
+         <li><i class="fa fa-arrow-right"></i><a href="#global-section">
+ &nbsp;&nbsp;Global Presence</li></a>
+      </ul>
+      
+      
+    </div>
+    <img src="white triaal.png">
+    <div class="footer-about-p">
+      <p>We have established a reputation as a leader in the high growth emerging market for energy and renewable energy sector, servicing telecommunication and ultimately the growing end-consumer market </p>
+    </div>
+
+  </div>
+
+  <div class="footer-social">
+
+    <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+    <a href="#"> <i class="fa fa-whatsapp" aria-hidden="true"></i> </a>
+    <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+    <a href="#"> <i class="fa fa-youtube-play" aria-hidden="true"> </i> </a>
+    
+  </div>
+  <hr class="footer-line2">
+
+  <div class="footer-end">
+
+    <a href="#">
+    <div class="footer-button">
+      <h1><i class="fa fa-arrow-up" aria-hidden="true"></i></h1>
+    </div>
+    </a>
+
+    <div class="copyrights">
+      <p>&copy; UTES.EG All rights reserved. powered by </p>
+      <a href="#">Soliutions</a>
+      
+    </div>
+    
+    
+    
+  </div>
+
+</body>
+</html>
