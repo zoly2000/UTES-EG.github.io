@@ -1,6 +1,7 @@
 /* mobile*/
 
-@media only screen and (min-width: 100px) and (max-width: 415px) {
+@media only screen and (max-width: 868px) {
+
 
 /* section1*/
   .section-1{
@@ -1016,14 +1017,14 @@ font-size: 18px;
 
 }
 /* footer end*/
-}
+
 
 
 /* mobile end*/
 
 
 /* nav bar*/
-@media only screen and (max-width: 868px) {
+
   body.disabledScroll{
     overflow: hidden;
   }
