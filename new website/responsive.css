@@ -107,9 +107,12 @@
 .section2-container{
   display: inline-block;
   vertical-align: center;
+
 }
 
 .box1{
+    display: flex;
+    justify-content: center;
     width: 100%;
     margin-top: 20%;
     margin-left:0%; 
