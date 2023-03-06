@@ -104,7 +104,11 @@
   margin-left: 0%;
 }
 
+.section2-container{
+   
+   display: none;
 
+}
 
 .box1{
     width: 100%;
