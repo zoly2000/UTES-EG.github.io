@@ -1,18 +1,18 @@
 /* mobile*/
 
-@media only screen and (max-width: 868px) {
+@media only screen and (max-width: 500px) {
 
 
 /* section1*/
   .section-1{
     width: 100%;
-    height: 800px; 
+    height: 900px; 
     align-items: center;
 }
 
   #banner{
    width: 100%;
-   height: 800px;
+   height: 900px;
 }
 
 
@@ -51,43 +51,47 @@
 
 }
 
-#section-1-shadow{  width: 95%;
-  margin-top: 300px;
-  margin-left: -190px;
+#section-1-shadow{
+  width: 70%;
+  margin-top: 60%;
+  margin-left: -190px
 }
 
 #section-1-mobile{
-  width: 97%;
-  margin-top: 300px;
+  width: 70%;
+  margin-top:60%;
   margin-left: -190px;
 }
-#section-1-shasha{  
-  width: 97%;
-  margin-top: 300px;
-  margin-left: -190px;
+#section-1-shasha{ 
+  width: 55%;
+  margin-top: 63%;
+  margin-left: -180px;
 }
 
-#box-shadow-top{  
-  width: 97%;
-  margin-top: 300px;
-  margin-left: -190px;
+#section-1-box-top{
+  width: 12.5%;
+  margin-top: 50% ;
+  margin-left: -200px;
 }
 
-#box-shadow-bottom{  
-  width: 97%;
-  margin-top: 303px;
-  margin-left: -190px;
+#box-shadow-top{
+  width: 12.5%;
+  margin-top: 50.5%;
+  margin-left: -200px;
 }
-#section-1-box-top{  
-  width: 97%;
-  margin-top: 310px;
-  margin-left: -210px;
+
+#section-1-box-bottom{ 
+  width: 12.5%;
+  margin-top: 55.5%;
+  margin-left: -30px;
 }
-#section-1-box-bottom{  
-  width: 97%;
-  margin-top: 300px;
-  margin-left: -190px;
+
+#box-shadow-bottom{
+  width: 12.5%;
+  margin-top:56%;
+  margin-left: -30px;
 }
+
 /* section1 end*/
 
 
@@ -98,38 +102,10 @@
   height: 1700px;  
 }
 
-#section2-header{
-  margin-top: 50px;
-  width: 97%;
-  margin-left: 2%;
-}
 
-.section2-container{
-  display: inline-block;
-  vertical-align: center;
-}
 
-.box1{
-    width: 95%;
-    margin-top: 20%;
-    margin-left:0%; 
-    height: 400px;
-
-}
-
-.box2{
-    width: 95%;
-    height: 400px;
-    margin-top: 150%;
-    margin-left:5%; 
-}
-
-.box3{
-    width: 95%;
-    height: 400px;
-    margin-top: 280%;
-    margin-left:5%; 
-
+#section2-container-box2{
+  margin-top: 4%;
 }
 
 /* section3*/
@@ -778,7 +754,7 @@
 .section6-cards-cont{
   width: 100%;
   margin-top: 15%;
-  margin-left: 1px;
+  margin-left: 0px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 130px;
@@ -806,10 +782,11 @@
 }
 .section7-box-cont{
   margin-top: 30%;
-  margin-left: 1.5%;
+  margin-left: 0%;
+
 }
 .section7-box1{
-  width: 98%;
+  width: 100%;
   height: 220px;
   background-color: white;
   border-radius: 10px;
@@ -833,7 +810,7 @@
 }
 
 .section7-box2{
-  width: 98%;
+  width: 100%;
   height: 220px;
   background-color: white;
   border-radius: 10px;
@@ -969,23 +946,23 @@
 /* section10*/
 .section10{
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 #section10-head{
   font-size: 46px;
-  position: absolute;
-  margin-top: -23%;
-  margin-left: 6%;
   color: #333333; 
 }
 
 .section10-cont{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap:20px;
-  margin-top: 40%;
-  margin-left: 6%;
+  margin-top: 5%;
+  margin-left: 0%;
+}
+.section10-sec{
+
 }
 
 /* section10 end*/

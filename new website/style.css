@@ -6,6 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 /* custom scroll bar */
+
 ::-webkit-scrollbar {
     width: 17px;
 }
@@ -42,13 +43,13 @@
   padding: 0 20px;
 }
 #logoImg{
-  width: 150px;
-  margin-left: 0px;
+  width: 220px;
+  margin-left: 10px;
   margin-top: 10px;
 }
 #logoImgSticky{
-  width: 150px;
-  margin-left: 0px;
+  width: 200px;
+  margin-left: 10px;
   margin-top: 10px;
   display: none;
 }

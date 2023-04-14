@@ -1,11 +1,9 @@
 .section2{
-	max-width: 100%;
-	height: 680px;
-	text-align: center;	
-	align-items: center;	
+	width: 100%;
+	height: 800px;	
 }
 
-#section2-header{
+.section2 h1{
 	text-align: center;
 	font-size: 25px;
 	width: 60%;
@@ -13,120 +11,64 @@
 	margin-left: 18%;
 	font-family: 'Raleway', sans-serif;
 	color: #3e5d89;
-
-
 }
 
-.section2-container{
-	max-width: 100%;
-	flex-direction: row;
+.section2-container {
+  margin-top: 9%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.section2-container{
-	width: 100%;
-	height: 100%;
 
+.section2-container-box{
+  width: 370px;
+  height: 440px;
+  margin: 20px;
+  background-color: white;
+  box-shadow: 0 0px 20px rgb(0 0 0 / 0.2);
 }
-.box1{
-	width: 350px;
-	height: 400px;
-	background-color: white;
-	position: absolute;
-	margin-top: 130px;
-	margin-left: 50px;
-	box-shadow: 0 0px 20px rgb(0 0 0 / 0.2);
+
+.section2-container-box h1{
+	font-size: 25px;
 	text-align: center;
+	margin-top: 15%;
+	color: black;
 }
 
-.box1:hover{
+.section2-container-box p{
+	text-align: center;
+	margin-top:5%; 
+	font-size: 16px;
+	line-height: 45px;
+	color: #525657;
+
+}
+
+.section2-container-box:hover{
 	background: rgb(64,47,117);
     background: linear-gradient(180deg, rgba(64,47,117,1) 0%, rgba(96,49,151,1) 100%);	
     box-shadow: none;
 }
 
-#box1-header{
-	text-align: center;
-	padding: 30px;
-	color: black;
+.section2-container-box:hover  h1{
+	color: white;
 }
-
-.box1:hover  #box1-header{
+.section2-container-box:hover  p{
 	color: white;
 }
 
-#box1-paragraph{
-	text-align: center;
-	padding: 1px;
-	width: 99%;
-	font-size: 16px;
-	line-height: 35px;
-	color: #525657;
-}
-
-.box1:hover  #box1-paragraph{
-	color: white;
-}
-.box2{
-	width: 350px;
-	height: 430px;
-	background: rgb(64,47,117);
-    background: linear-gradient(180deg, rgba(64,47,117,1) 0%, rgba(96,49,151,1) 100%);
-	position: absolute;
-	margin-top: 110px;
-	margin-left: 475px;
-}
-
-#box2-header{
-	color: white;
-	text-align: center;
-	padding: 30px;
-}
-
-#box2-paragraph{
-	text-align: center;
-	width: 90%;
-	font-size: 16px;
-	line-height: 35px;
-	color: white;
-	margin-top: -20px;
-	margin-left: 20px;
-}
-
-
-.box3{
-	width: 350px;
-	height: 400px;
-	background-color: white;
-	position: absolute;
-	margin-top: 130px;
-	margin-left: 900px;
-	box-shadow: 0 0px 20px rgb(0 0 0 / 0.2);	
-}
-
-.box3:hover{
+#section2-container-box2{
+	margin-top: 0%;
 	background: rgb(64,47,117);
     background: linear-gradient(180deg, rgba(64,47,117,1) 0%, rgba(96,49,151,1) 100%);	
     box-shadow: none;
+
 }
 
-#box3-header{
-	text-align: center;
-	padding: 30px;
-	color: black;
+#section2-container-box2 h1{
+	color: white
 }
 
-.box3:hover  #box3-header{
-	color: white;
-}
-
-#box3-paragraph{
-	text-align: center;
-	width: 100%;
-	font-size: 16px;
-	line-height: 35px;
-	color: #525657;
-	margin-top: -20px;
-}
-
-.box3:hover  #box3-paragraph{
-	color: white;
+#section2-container-box2 p{
+	color: white
 }
