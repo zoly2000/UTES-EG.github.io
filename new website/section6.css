@@ -1,6 +1,6 @@
 .section6{
 	width: 100%;
-	height: 1475px;
+	height: 1600px;
 	background-color: white;
 }
 
@@ -29,7 +29,7 @@
 
 .section6-card{
 	width: 350px;
-	height: 400px;
+
     background-color: red;
     box-shadow: 0 0px 20px rgb(0 0 0 / 0.2);
     transition: 0.5s;

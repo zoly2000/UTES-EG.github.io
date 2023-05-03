@@ -20,7 +20,17 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="loader.css">
 
-    <link rel="stylesheet" href="responsive.css" media="screen and (max-width: 500px)">
+    <link rel="stylesheet" href="small-mobile.css" media="screen and (min-width: 250px) and (max-width: 360px)">
+
+    <link rel="stylesheet" href="responsive.css" media="screen and (min-width: 360px) and (max-width: 501px)">
+
+    <link rel="stylesheet" href=" rot-mobile.css" media="screen and (min-width: 501px) and (max-width: 767px)">
+
+    <link rel="stylesheet" href=" tablet-responsive.css" media="screen and (min-width: 767px) and (max-width: 1023px)">
+
+    <link rel="stylesheet" href=" small-sc-responsive.css" media="screen and (min-width: 1023px) and (max-width: 1300px)">
+
+
 
     
 
@@ -83,7 +93,7 @@
       </a></div>
       <ul class="menu-list">
         <div class="icon cancel-btn">
-          <i class="fas fa-times" id="zoli"></i>
+          <i class="fa-solid fa-xmark" id="zoli"></i>
         </div>
         <li><a href="#">Home</a></li>
         <li><a href="services/index.html">Services</a></li>
@@ -91,7 +101,7 @@
         <li><a href="contact/index.html">Contact</a></li>
       </ul>
       <div class="icon menu-btn">
-        <i class="fas fa-bars"></i>
+        <i class="fa-solid fa-bars"></i>
       </div>
     </div>
   </nav>
@@ -123,21 +133,28 @@
   <div class="section-1">
 
     <img src="marketing-color.jpg" id="banner">
-    
-    <div class="design">
-      <img src="shadow.png" id="section-1-shadow">
-      <img src="mobile.png" id="section-1-mobile">
-      <img src="shasha.png" id="section-1-shasha">
-      <img src="box-shadow-top.png" id="box-shadow-top">
-      <img src="box-shadow-bottom.png" id="box-shadow-bottom">
-      <img src="box-top.png" id="section-1-box-top">
-      <img src="box-bottom.png" id="section-1-box-bottom">  
+    <div class="section1-container">
+      <div class="section1-left">
+        <h1 id="section1-header">We Make The Path To<br>Your <span id="bold-span">Digital Presence</span></h1>
+        <p id="section1-paragraph">We are a full-service digital agency focused on the customer. Your company has a unique narrative to tell, and if told correctly, it can drive your sales.</p>
+        <a href="contact/index.html">
+          <div class="section1-btn">
+            <h2>Contact us  &nbsp;<i class="fa-sharp fa-solid fa-paper-plane"></i></h2>
+          </div>
+        </a>
+      </div>
+      <div class="section1-right">
+        <img src="box-shadow-top.png" id="box-shadow-top">
+        <img src="box-top.png" id="box-top">
+        <img src="shadow.png" id="shadow">
+        <img src="mobile.png" id="mobile">
+        <img src="shasha.png" id="shasha">
+        <img src="box-shadow-bottom.png" id="box-shadow-bottom">
+        <img src="box-bottom.png" id="box-bottom">
+      </div>
     </div>
-    <h1 id="section1-header">We Make The Path To<br>Your <span id="bold-span">Digital Presence</span></h1>
-    <p id="section1-paragraph">We are a full-service digital agency focused on the customer. Your company has a unique narrative to tell, and if told correctly, it can drive your sales.</p> <br>
-    <a href="#" id="section-1-button-cont">
-      <div class="section-1-button">Contact Us &nbsp;<i class="fa-sharp fa-solid fa-paper-plane"></i></div>
-   </a>
+   
+
   </div>
 
   <div class="section2">
@@ -607,7 +624,7 @@ responsiveSlider();
         <img src="tawasol.png">
       </div>
       <div class="section10-sec">
-        <img src="meta.jpg">
+        <img src="meta.png">
       </div>
       <div class="section10-sec">
         <img src="google.jpg">

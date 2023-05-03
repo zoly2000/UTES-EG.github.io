@@ -1,6 +1,6 @@
 /* mobile*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 350px) and (max-width: 501px) {
 
 
 /* section1*/
@@ -15,83 +15,42 @@
    height: 900px;
 }
 
+.section1-container {
+    flex-direction: column;
+    margin-top: 30%;
+  }
+.section1-left, .section1-right {
+    flex: none;
+    padding: 20px;
+  }
+
 
   #section1-header{
-    width: 100%;
-    font-size: 26px;
-    position: absolute;
-    top: 10%;
-    text-align: center;
-    align-items: center;
-    
-  }
-  #section1-paragraph {
-    max-width: 96%;
-    text-align: center;
-    align-items: center;
-    font-size: 16px;
-    margin-top: 115px;
-
+  text-align: center;
+  font-size: 32px;
+  margin-left: 0%;
   }
 
+  #section1-paragraph{
+  width: 100%;
+  font-size: 18px;
+  margin-left: 0%;
+  width: 100%;
+  text-align: center;
+  }
+  .section1-btn{
+    margin-top: 10%;
+    margin-left: 27%;
 
-  .section-1-button{
-    max-width: 155px;
-    height: 40px;
-    font-size: 18px;
-    padding: 10px;
-    justify-content: center;
-
-
+  }
+  .section1-right img{
+  max-width: 80%;
+  position: absolute;
+  margin-top: -10%;
+  margin-left: 2%;
+  overflow: hidden;
 }
-
-.section-1 a{
-    margin-top: 180px;
-    margin-left: 25%;
-
-}
-
-#section-1-shadow{
-  width: 70%;
-  margin-top: 60%;
-  margin-left: -190px
-}
-
-#section-1-mobile{
-  width: 70%;
-  margin-top:60%;
-  margin-left: -190px;
-}
-#section-1-shasha{ 
-  width: 55%;
-  margin-top: 63%;
-  margin-left: -180px;
-}
-
-#section-1-box-top{
-  width: 12.5%;
-  margin-top: 50% ;
-  margin-left: -200px;
-}
-
-#box-shadow-top{
-  width: 12.5%;
-  margin-top: 50.5%;
-  margin-left: -200px;
-}
-
-#section-1-box-bottom{ 
-  width: 12.5%;
-  margin-top: 55.5%;
-  margin-left: -30px;
-}
-
-#box-shadow-bottom{
-  width: 12.5%;
-  margin-top:56%;
-  margin-left: -30px;
-}
-
+  
 /* section1 end*/
 
 
@@ -107,6 +66,7 @@
 #section2-container-box2{
   margin-top: 4%;
 }
+
 
 /* section3*/
 .section3{
@@ -669,12 +629,11 @@
 
 .section4-cards-cont{
   width: 90%;
-    margin-top: 25%;
+  margin-top: 25%;
   margin-left: 3%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 120px;
-
 }
 
 .section4-card h1{
@@ -875,14 +834,17 @@
 
 #section8-frame{
   width: 320px;
-  position: absolute;
-  margin-top: 10%;
-  margin-left: 8%;
+  margin-top: 30%;
+  margin-left: 50%;
+    -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .slider-cont{
   position: absolute;
-  margin-top: 12%;
-  margin-left: 17.7%;
+  margin-top: 29.5%;
+  margin-left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 #slider {
   position: relative;
@@ -961,9 +923,7 @@
   margin-top: 5%;
   margin-left: 0%;
 }
-.section10-sec{
 
-}
 
 /* section10 end*/
 
