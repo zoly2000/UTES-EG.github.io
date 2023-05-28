@@ -58,22 +58,7 @@
 	margin-left: 15%;
 }
 
-.section2-top-card span{
-    position: absolute;
-	margin-top: 2.2%;
-	margin-left: -19.6%;
-	font-size: 14px;
-    color:#4c4c4c;
-}
-#section2-top-card-h2{
-	text-align: center;
-	line-height: 60px;
-	font-size: 60px;
-	position: absolute;
-	margin-top: -37%;
-	margin-left: 9.8%;
-	font-family: serif;
-}
+
 .section2-mid {
 	width: 90%;
     margin-top: 10%;

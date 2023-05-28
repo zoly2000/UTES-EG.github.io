@@ -1,0 +1,198 @@
+@media only screen and (min-width: 1023px) and (max-width: 1300px) {
+
+.section2{
+	width: 100%;
+	height: 2100px;
+}
+
+.section2-app-up{
+	width: 100%;
+    margin-top: 10%;
+	margin-left: 0%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	gap: 30px;
+}
+.section2-app-up-cards{
+	width: 490px;
+	height: 600px;
+}
+
+#section2-app-up-cards-h1{
+	color: #3b974c;
+	font-size: 28px;
+	margin-left: 1%;
+}
+
+#section2-app-up-cards-p1{
+	margin-top: 1%;
+	margin-left: 1.5%;
+	font-size: 18px;
+	line-height: 35px;
+	width: 95%;
+}
+.section2-app-up-cards img{
+	width: 100%;
+	margin-left: 0%;
+	margin-top: 5%;
+}
+.section2-app-mid{
+	width: 100%;
+    margin-top: 8%;
+	margin-left: 0%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	gap: 100px;
+}
+
+#section2-app-mid-h{
+	text-align: center;
+	font-size: 37px;
+}
+
+.section2-app-mid-cards{
+	width: 100%;
+	height: 600px;
+}
+
+.section2-app-mid-cards .fa-android{
+	color: #3DDC84;
+	position: absolute;
+	font-size: 70px;
+	margin-top: 1%;
+	margin-left: 19%;
+}
+
+.section2-app-mid-cards .fa-apple{
+	color: #555555;
+	position: absolute;
+	font-size: 60px;
+	margin-top: 1%;
+	margin-left: 20%;
+}
+
+.section2-app-mid-cards .fa-tablet-screen-button{
+	color: #0a01bf;
+	position: absolute;
+	font-size: 70px;
+	margin-top: 8%;
+	margin-left: 16.5%;
+}
+
+.section2-app-mid-cards .fa-mobile-screen-button{
+	color: #0a01bf;
+	position: absolute;
+	font-size: 40px;
+	margin-top: 10%;
+	margin-left: 23%;
+}
+.section2-app-mid-cards .fa-users-rays{
+	color: green;
+	position: absolute;
+	font-size: 60px;
+	margin-top: 9%;
+	margin-left: 19%;
+}
+.section2-app-end{
+	width: 90%;
+    margin-top: 8%;
+	margin-left: 1%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
+	gap: 70px;
+}
+
+.section2-app-end-cards{
+	width: 500px;
+	height: 600px;
+
+}
+.section2-app-end-cards img{
+	width: 100%;
+	margin-top: 30%;
+}
+.section3{
+  width: 100%;
+  height: 1250px;
+  background-color: white;
+}
+
+#section3-head{
+  color: #333333;
+  font-size: 50px;
+  position: absolute;
+  margin-top: -6%;
+  margin-left: 5%;
+}
+
+.section3-box-cont{
+  margin-top: 15%;
+  margin-left: 2%;
+}
+.section3-box1{
+  width: 390px;
+  height: 210px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px rgb(0 0 0 / 0.2);
+  border-bottom: 17px solid #4d168d;
+}
+.section3-box2{
+  width: 390px;
+  height: 210px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px rgb(0 0 0 / 0.2);
+  border-bottom: 17px solid #ff2c9c;
+  margin-top: 5%;
+}
+.contactform{
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  margin-top: -46%;
+  margin-left: 37%;
+  box-sizing: border-box;
+
+}
+.footer{
+  width: 100%;
+  height: 500px;
+  background-color: #f4f4f4;
+  margin-top: -10%;
+}
+
+
+.footer-cont{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:0px;
+  margin-top: 5%;
+  margin-left: 0%;
+}
+.footer-sec{
+  width: 250px;
+  height: 400px;
+}
+#footer-social a{
+  position: relative;
+  list-style: none;
+  margin:0 13px;
+  cursor: pointer;
+}
+#footer-social a   .fa-brands{
+  font-size: 1.6em;
+  color: #434242;
+}
+#footer-social a::before{
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.6em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+
+}
+}
