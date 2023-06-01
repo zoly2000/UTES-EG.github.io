@@ -353,13 +353,13 @@ margin-top: -1%;
   font-weight: 500;
   padding: 5px 12px;
   text-align: left;
-  border-bottom-width:  1px solid #10366f;
+  border-bottom-width:  1px solid #131313;
   text-align: center;
 
 }
 
 .tab-nav li.active {
-  background-color: #10366f;
+  background-color: #131313;
   transform: scale(1);
   color: white;
 
@@ -377,6 +377,7 @@ margin-top: -1%;
  .tab-col-left p{
   width: 100%;
   font-size: 17px;
+  margin-top: 17.5%;
  }
 
  .section5-right img{
@@ -427,7 +428,7 @@ margin-top: -1%;
 }
 
 
-/* section10 end*/
+/* section6 end*/
 /* footer*/
 .footer{
   width: 100%;
