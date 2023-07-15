@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZIDMA Solutions</title>
-    <link rel = "icon" href = "icon.png" type = "image/x-icon">
+    <title>UTES</title>
+    <link rel = "icon" href = "utes icon.png" type = "image/x-icon">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="section1.css">
@@ -15,20 +15,19 @@
     <link rel="stylesheet" href="section6.css">
     <link rel="stylesheet" href="section7.css">
     <link rel="stylesheet" href="section8.css">
-    <link rel="stylesheet" href="section9.css">
-    <link rel="stylesheet" href="section10.css">
+
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="loader.css">
 
-    <link rel="stylesheet" href="small-mobile.css" media="screen and (min-width: 250px) and (max-width: 360px)">
+    <link rel="stylesheet" href="responsive.css" media="screen and (min-width: 250px) and (max-width: 360px)">
 
     <link rel="stylesheet" href="responsive.css" media="screen and (min-width: 360px) and (max-width: 501px)">
 
-    <link rel="stylesheet" href=" rot-mobile.css" media="screen and (min-width: 501px) and (max-width: 767px)">
+    <link rel="stylesheet" href="rot-mobile.css" media="screen and (min-width: 501px) and (max-width: 767px)">
 
-    <link rel="stylesheet" href=" tablet-responsive.css" media="screen and (min-width: 767px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="tablet-responsive.css" media="screen and (min-width: 767px) and (max-width: 1023px)">
 
-    <link rel="stylesheet" href=" small-sc-responsive.css" media="screen and (min-width: 1023px) and (max-width: 1300px)">
+    <link rel="stylesheet" href="small-sc-responsive.css" media="screen and (min-width: 1023px) and (max-width: 1300px)">
 
 
 
@@ -63,203 +62,422 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-
 </head>
 <body>
-  <div class="loader">
-      <img src="zidma logo sticky.png">
-    </div>
-    <script>
-      document.onreadystatechange = function() {
-            if (document.readyState !== "complete") {
-                document.querySelector(
-                  "body").style.visibility = "hidden";
-                document.querySelector(
-                  ".loader").style.visibility = "visible";
-            } else {
-                document.querySelector(
-                  ".loader").style.display = "none";
-                document.querySelector(
-                  "body").style.visibility = "visible";
-            }
-        };
-    </script>
-
-  <nav class="navbar">
+<nav class="navbar">
     <div class="content">
-      <div class="logo"><a href="#">
-        <img src="zidma white.png" id="logoImg">
-        <img src="zidma logo sticky.png" id="logoImgSticky">
-      </a></div>
+
+      <div class="logo">
+
+        <a href="index.html">
+         <img alt="UTES" src="web.png"
+         width="75" height="80">
+      </a>
+
+
+      </div>
+
       <ul class="menu-list">
         <div class="icon cancel-btn">
-          <i class="fa-solid fa-xmark" id="zoli"></i>
+          <i class="fas fa-times"></i>
         </div>
-        <li><a href="#">Home</a></li>
-        <li><a href="services/index.html">Services</a></li>
-        <li><a href="about/index.html">About-Us</a></li>
-        <li><a href="contact/index.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about/about.html">About</a></li>
+        <li><a href="service/services.html">Services</a></li>
+        <li><a href="products/products.html">Products</a></li>
+        <li><a href="contact/contact.html">Contact</a></li>
+        <li><a href="blog/blog.html">Blog</a></li>
+        <li><a href="#"> <i class="fa fa-globe" style="font-size: 23px;"></i></a></li>
       </ul>
       <div class="icon menu-btn">
-        <i class="fa-solid fa-bars"></i>
+        <i class="fas fa-bars"></i>
       </div>
     </div>
   </nav>
-
   <script>
     const body = document.querySelector("body");
     const navbar = document.querySelector(".navbar");
-    const menu = document.querySelector(".menu-list");
     const menuBtn = document.querySelector(".menu-btn");
     const cancelBtn = document.querySelector(".cancel-btn");
     menuBtn.onclick = ()=>{
-      menu.classList.add("active");
+      navbar.classList.add("show");
       menuBtn.classList.add("hide");
-      cancelBtn.classList.add("show");
-      body.classList.add("disabledScroll");
+      body.classList.add("disabled");
     }
     cancelBtn.onclick = ()=>{
-      menu.classList.remove("active");
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
       menuBtn.classList.remove("hide");
-      cancelBtn.classList.remove("show");
-      body.classList.remove("disabledScroll");
     }
-
     window.onscroll = ()=>{
       this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
     }
   </script>
- 
-  <div class="section-1">
-
-    <img src="marketing-color.jpg" id="banner">
-    <div class="section1-container">
-      <div class="section1-left">
-        <h1 id="section1-header">We Make The Path To<br>Your <span id="bold-span">Digital Presence</span></h1>
-        <p id="section1-paragraph">We are a full-service digital agency focused on the customer. Your company has a unique narrative to tell, and if told correctly, it can drive your sales.</p>
-        <a href="contact/index.html">
-          <div class="section1-btn">
-            <h2>Contact us  &nbsp;<i class="fa-sharp fa-solid fa-paper-plane"></i></h2>
-          </div>
-        </a>
-      </div>
-      <div class="section1-right">
-        <img src="box-shadow-top.png" id="box-shadow-top">
-        <img src="box-top.png" id="box-top">
-        <img src="shadow.png" id="shadow">
-        <img src="mobile.png" id="mobile">
-        <img src="shasha.png" id="shasha">
-        <img src="box-shadow-bottom.png" id="box-shadow-bottom">
-        <img src="box-bottom.png" id="box-bottom">
-      </div>
+  <div class="nav-blank"></div>
+  <div class="section1">
+<div class="section1-slider">
+  <div class="section1-slide activated">
+    <img src="img1.png" alt="Image 1">
+    <div class="slide-text">
+      <h2>Image 1 Header</h2>
+      <p>Image 1 Paragraph</p>
     </div>
-   
-
   </div>
+  <div class="section1-slide">
+    <img src="img2.jpg" alt="Image 2">
+    <div class="slide-text">
+      <h2>Image 2 Header</h2>
+      <p>Image 2 Paragraph</p>
+    </div>
+  </div>
+  <div class="section1-slide">
+    <img src="img3.jpg" alt="Image 3">
+    <div class="slide-text">
+      <h2>Image 3 Header</h2>
+      <p>Image 3 Paragraph</p>
+    </div>
+  </div>
+</div>
+  </div>
+  <script type="text/javascript">
+const section1Slider = document.querySelector('.section1-slider');
+if (section1Slider) {
+  const section1Slides = section1Slider.querySelectorAll('.section1-slide');
+  let currentSlide = 0;
+  let interval = setInterval(nextSlide, 4000);
 
+  function nextSlide() {
+    section1Slides[currentSlide].classList.remove('activated');
+    currentSlide = (currentSlide + 1) % section1Slides.length;
+    section1Slides[currentSlide].classList.add('activated');
+  }
+}
+  </script>
   <div class="section2">
-    <h1>We value adjusting our strategies to each client in order to offer a turnkey solution designed exactly for your needs</h1>
-    <div class="section2-container">
-      <div class="section2-container-box">
-        <h1>CREATIVE</h1>
-        <p id=>We are competent and experienced in all facets of publicity.We understand that the current growth medium is digital marketing.We have our eyes closed.We do hear and This tiny spark we have </p>
+      <div class="section2-top">
+        <div class="section2-top-card">
+          <img src="ab1.jpg" id="section2-img1">
+        </div>
+        <div class="section2-top-card">
+          <span>
+            <h1>Who We Are</h1>
+            <img src="lightning.png">
+          </span>
+          <h2>Leading Total Soliution Provider</h2>
+          <h3>In Power Product and Service Solutions</h3>
+          <span>
+            <hr id="section2-line1">
+            <hr id="section2-line2">
+          </span>
+          <p>The power industry is changing rapidly, Discussions often focus on better energy efficiency, high-density servers and data centers. These trends come at a time when Electrical Energy Managers are under tremendous pressure to lower equipment costs and operating expenses.
+          <br><br>
+          At UTES, we understand emerging technologies and the strategies required to implement them. As power experts, we are trained to help Electrical managers sort through the technical chatter and develop real solutions </p>
+        </div>
       </div>
-      <div class="section2-container-box" id="section2-container-box2">
-        <h1>Zero to Hero</h1>
-        <p>Our goal is to comprehend the relationship between the customer and the material. Consider your brand as a puzzle with each piece representing a unique strategy. We're here to get to the larger picture, one step at a time.</p>
+      <div class="section2-end">
+        <div class="section2-end-card">
+          <img src="ab2.jpg" id="section2-img2">
+        </div>
+        <div class="section2-end-card">
+          <div class="section2-end-card-divs-cont">
+            <div class="section2-end-card-divs">
+              <img src="sicon.png">
+              <h1>SAVE ENERGY FOR THE WORLD</h1>
+            </div>
+            <div class="section2-end-card-divs">
+              <img src="quality.png">
+              <h1>HIGH QUALITY SERVICE TO OUR CLIENTS</h1>
+            </div>
+            <div class="section2-end-card-divs">
+              <img src="wherever.png">
+              <h1>Wherever and Whenever wide range of products and services</h1>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="section2-container-box">
-        <h1>Methodical</h1>
-        <p>We make lasting impressions that convert viewers into believers, participants into advocates, and consumers into purchasers. Telling your narrative in a way that engages, inspires, and motivates the individuals you’re trying to reach.</p>   
+  </div>
+  <div class="section3">
+    <div class="counter-section">
+      <div class="counter">
+        <h2 class="count" data-target="12">0</h2>
+        <p>YEARS OF EXPERIENCE</p>
+      </div>
+      <div class="counter">
+        <h2 class="count" data-target="90">0</h2>
+        <p>SUCCESSFUL PROJECT</p>
+      </div>
+      <div class="counter">
+        <h2 class="count" data-target="40">0</h2>
+        <p>TURSTED CLIENTS</p>
       </div>
     </div>
   </div>
 
-  <div class="section3">
+  <script type="text/javascript">
+const counters = document.querySelectorAll('.count');
+const speed = target => target / (4 * 60);
 
-    <h1 id="section3-header">Your Partner In Success .</h1>
+window.addEventListener('scroll', startCount);
 
-<section class="tab">
+function startCount() {
+  counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    
+    if (window.pageYOffset > (counter.offsetTop - window.innerHeight + 100)) {
+      const inc = speed(target);
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + inc);
+        setTimeout(startCount, 16.7); // 60 fps
+      } else {
+        counter.innerText = target;
+      }
+    }
+  });
+}
+  </script>
+  <div class="section4">
+     <section class="tab">
       <div class="tab-container">
         <ul class="tab-nav">
-          <li class="active">About<span id="tab-nav-responsive"> Us</span></li>
-          <li><span id="tab-nav-responsive">Our</span> Mission</li>
-          <li><span id="tab-nav-responsive">Our</span> Vision</li>
-          
+          <li class="active">Services</li>
+          <li>Products</li>
         </ul>
         <div class="tab-body active">
-          <div class="tab-col-left">
-
-            <p>Produce and share material that improves the lives of our account holders by generating leads for loans and new accounts.</p>
-            
-          </div>
-          <div class="tab-col-right">
-
-           <div class="circle-cont">
-              <img src="social.png" id="circle-cont-social">
-              <img src="file.png" id="circle-cont-file1">
-              <img src="file.png" id="circle-cont-file2">
-
-              <div class="circle-path1">
-                <div class="path1-circle1"> <img src="profile_icon_4.svg"></div>
-                <div class="path1-circle2"> <img src="profile_icon_4.svg"></div>
+          <div class="section4-cards-cont">
+            <div class="section4-card">
+              <h1>Our Services</h1>
+              <ul>
+                <li>Tailored to your specific needs</li>
+                <li>Providing comprehensive solutions</li>
+                <li>Highly trained experienced technicians </li>
+                <li>Using latest technologies</li>
+              </ul>
+              <a href="#">
+                <h1>All Services <i class="fa-solid fa-circle-arrow-right"></i></h1>
+              </a>
+            </div>
+            <div class="section4-card">
+              <div class="thecard">
+                <div class="thefront">
+                  <img src="power equipment.png">
+                  <h1>Power equipment supplying</h1>
+                  <h2>01</h2>
+                </div>
+                <div class="theback">
+                  <h1>Power equipment supplying</h1>
+                  <hr>
+                  <p>We provide tailored power equipment solutions, delivering reliable and high-quality electrical equipment for businesses.and providing installation service</p>
+                  <a href="#">
+                    <div class="btn">
+                      <h1>Learn More</h1>
+                    </div>
+                  </a>
+                </div>
               </div>
+            </div>
 
-              <div class="circle-path2">
-                <div class="path2-circle1"> <img src="profile_icon_3.svg"></div>
-                <div class="path2-circle2"> <img src="profile_icon_3.svg"></div>
-                <div class="path2-circle3"> <img src="profile_icon_3.svg"></div>
+            <div class="section4-card">
+              <div class="thecard">
+                <div class="thefront">
+                  <img src="network.png">
+                  <h1>24/7 Power networking support</h1>
+                  <h2>02</h2>
+                </div>
+                <div class="theback">
+                  <h1>Power networking support</h1>
+                  <hr>
+                  <p>We offer expert Power networking support for uninterrupted power supply, providing comprehensive solutions from design to maintenance to keep your business connected.</p>
+                  <a href="#">
+                    <div class="btn">
+                      <h1>Learn More</h1>
+                    </div>
+                  </a>
+                </div>
               </div>
+            </div>
 
-              <div class="circle-path3">
-                <div class="path3-circle1"> <img src="profile_icon_1.svg"></div>
-                <div class="path3-circle2"> <img src="profile_icon_1.svg"></div>
-                <div class="path3-circle3"> <img src="profile_icon_2.svg"></div>
-                <div class="path3-circle4"> <img src="profile_icon_2.svg"></div>
+            <div class="section4-card">
+              <div class="thecard">
+                <div class="thefront">
+                  <img src="testing.png">
+                  <h1>Battery testing</h1>
+                  <h2 id="small-number">03</h2>
+                </div>
+                <div class="theback">
+                  <h1>Battery testing</h1>
+                  <hr>
+                  <p>We test the batteries with the latest technology in the market by profissional engineers to ensure the reliability and performance of your power systems</p>
+                  <a href="#">
+                    <div class="btn">
+                      <h1>Learn More</h1>
+                    </div>
+                  </a>
+                </div>
               </div>
-
-           </div>
-            
+            </div>
+            <div class="section4-card">
+              <div class="thecard">
+                <div class="thefront">
+                  <img src="maintenance.png">
+                  <h1>Maintenance</h1>
+                  <h2 id="small-number">04</h2>
+                </div>
+                <div class="theback">
+                  <h1>Maintenance</h1>
+                  <hr>
+                  <p>We provide customized maintenance services to meet your specific needs, ensuring optimal performance and preventing downtime of your power systems to keep your business running smoothly.</p>
+                  <a href="#">
+                    <div class="btn">
+                      <h1>Learn More</h1>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="section4-card">
+              <div class="thecard">
+                <div class="thefront">
+                  <img src="installation.png">
+                  <h1>Power system installation</h1>
+                  <h2>05</h2>
+                </div>
+                <div class="theback">
+                  <h1>Power system installation</h1>
+                  <hr>
+                  <p>We offer turnkey power system installation solutions, including design, installation, and commissioning, tailored to meet your specific needs for a seamless and efficient power supply.</p>
+                  <a href="#">
+                    <div class="btn">
+                      <h1>Learn More</h1>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+
+
         <div class="tab-body">
-            <div class="tab-col-left">
-
-              <p>We intend to provide our clients with the best customized and practical solutions to expand their online and offline presence and achieve their business goals through providing smart solutions, a creative team, friendly service, fast delivery, and ongoing support.</p>
-              
+          <div class="section4-cards-cont">
+            <div class="section4-card">
+              <h1>Our Products</h1>
+              <ul>
+                <li>Maximum efficiency</li>
+                <li>Cost-effectiveness</li>
+                <li>Designed using the latest technology</li>
+                <li>Optimal performance and safety</li>
+              </ul>
+              <a href="#">
+                <h1>All Products <i class="fa-solid fa-circle-arrow-right"></i></h1>
+              </a>
             </div>
-            <div class="tab-col-right">
-            
-              <div class="mission-cont">
-
-                <img src="marketing-st.png" id="mission-img">
-
+            <div class="section4-card">
+              <div class="thecard">
+                <div class="thefront">
+                  <img src="inBattery.png">
+                  <h1>Industrial Batteries</h1>
+                  <h2 id="small-number">01</h2>
+                </div>
+                <div class="theback">
+                  <h1>Industrial Batteries</h1>
+                  <hr>
+                  <p>We offer reliable and high-performance industrial batteries for forklifts, material handling equipment, and backup power systems, providing customized solutions for maximum efficiency and longevity.</p>
+                  <a href="#">
+                    <div class="btn">
+                      <h1>Learn More</h1>
+                    </div>
+                  </a>
+                </div>
               </div>
-  
             </div>
-          </div>
-          <div class="tab-body">
-            <div class="tab-col-left">
-              <p>
-                Easily share your bookmarks and collections with others. Create a
-                shareable link that you can send at the click of a button.
-              </p>
-            </div>
-            <div class="tab-col-right">
 
-              <div class="vision-cont">
-                <img src="progress.png" id="vision-img">
+            <div class="section4-card">
+              <div class="thecard">
+                <div class="thefront">
+                  <img src="rectifier.png">
+                  <h1>Rectifiers</h1>
+                  <h2 id="small-number">02</h2>
+                </div>
+                <div class="theback">
+                  <h1>Rectifiers</h1>
+                  <hr>
+                  <p>We offer efficient and reliable rectifiers for industrial power conversion needs, including electroplating, anodizing, and water treatment, providing customized solutions for maximum efficiency and reliability.</p>
+                  <a href="#">
+                    <div class="btn">
+                      <h1>Learn More</h1>
+                    </div>
+                  </a>
+                </div>
               </div>
+            </div>
 
+            <div class="section4-card">
+              <div class="thecard">
+                <div class="thefront">
+                  <img src="pannel.png">
+                  <h1>Distribution panels</h1>
+                  <h2 id="small-number">03</h2>
+                </div>
+                <div class="theback">
+                  <h1>Distribution panels</h1>
+                  <hr>
+                  <p>We provide customized distribution panel solutions to meet your specific needs and ensure efficient and safe electrical distribution for your business operations in various industries, including power generation, data centers, and manufacturing facilities.</p>
+                  <a href="#">
+                    <div class="btn">
+                      <h1>Learn More</h1>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="section4-card">
+              <div class="thecard">
+                <div class="thefront">
+                  <img src="ups.png">
+                  <h1>Uninterrupted Power Supply</h1>
+                  <h2>04</h2>
+                </div>
+                <div class="theback">
+                  <h1>Uninterrupted Power Supply</h1>
+                  <hr>
+                  <p>We offer reliable UPS solutions for uninterrupted power in industries such as data centers, healthcare, and critical infrastructure, providing customized solutions for maximum uptime and protection against outages.</p>
+                  <a href="#">
+                    <div class="btn">
+                      <h1>Learn More</h1>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="section4-card">
+              <div class="thecard">
+                <div class="thefront">
+                  <img src="pv system.png">
+                  <h1>PV Systems</h1>
+                  <h2 id="small-number">05</h2>
+                </div>
+                <div class="theback">
+                  <h1>PV Systems</h1>
+                  <hr>
+                  <p>We offer expert PV system maintenance services to ensure optimal performance and longevity of your solar power systems, providing customized solutions for maximum energy savings and environmental benefits.</p>
+                  <a href="#">
+                    <div class="btn">
+                      <h1>Learn More</h1>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+        </div>
+    </section>
+  </div>
 
-<script>
-
+  <script type="text/javascript">
     const tabNavList = document.querySelectorAll('.tab-nav li');
 const tabBody = document.querySelectorAll('.tab-body');
 
@@ -291,413 +509,214 @@ tabNavList.forEach((item,index,listArray)=>{
         }
     })
 })
-    
-</script>
-    
-  </div>
-
-  <div class="section4">
-
-    <h1 id="section4-header"> Best digital services for our clients </h1>
-    <p id="section4-p">We are ready to help you move forward and grow your buisiness</p>
-
-    <div class="section4-cards-cont">
-      
-      <div class="section4-card">
-        <div class="section4-card-box" id="section4-card-box-bg1">
-          <img src="lense.png">
-        </div>
-        <h1>Search Engine Optimization</h1>
-        <p> The act of influencing a website’s or a web page’s prominence in an online search engine’s unpaid results, also known as organic, or earned results.</p>
-        <a href="services/services-pages/seo/index.html">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-
-      <div class="section4-card">
-        <div class="section4-card-box" id="section4-card-box-bg2">
-          <img src="sem.png">
-        </div>
-        <h1>Search Engine Marketing</h1>
-        <p> In an increasingly competitive economy, search engine marketing (SEM) is one of the most effective strategies to expand your business.</p>
-        <a href="services/services-pages/sem/index.html">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-
-      <div class="section4-card">
-        <div class="section4-card-box" id="section4-card-box-bg3">
-          <img src="84366.png">
-        </div>
-        <h1>Web Development & Design </h1>
-        <p> It's the work that happens behind the scenes to make a website look great, work fast and perform well. All of this is done by a team of experts by using a variety of coding languages</p>
-        <a href="services/services-pages/web/index.html">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-
-      <div class="section4-card">
-        <div class="section4-card-box" id="section4-card-box-bg4">
-          <img src="smedia.png">
-        </div>
-        <h1>Social Media Markering</h1>
-        <p> For businesses of all sizes, social media is an essential marketing platform. “Why should our business use social media?” was a popular query a few years ago. </p>
-        <a href="services/services-pages/smm/index.html">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-
-      <div class="section4-card">
-        <div class="section4-card-box">
-          <img src="e.png" id="section4-card-box-bg5">
-        </div>
-        <h1>E-Mail Marketing</h1>
-        <p> We make lasting impressions that convert viewers into believers, participants into advocates, and consumers into purchasers. Telling your narrative in a way that engages, inspires, and motivates the individuals you’re trying to reach.</p>
-        <a href="services/services-pages/email/index.html">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-
-      <div class="section4-card">
-        <div class="section4-card-box" id="section4-card-box-bg6">
-          <img src="mdev.png">
-        </div>
-        <h1>Mobile App development</h1>
-        <p> Ensure a fascinating presence on the digital environment with modern, feature-rich mobile apps that provide visual delight that is hard to come across. With our knowledge and experience in the field.</p>
-        <a href="services/services-pages/app/index.html">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-
-
-    </div>
-    <br>
-
-  
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#1a1746" fill-opacity="1" d="M0,0L60,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-    </svg> 
-  </div>
-  
-  <br>
-
-  <div class="section5">
-
-    
-      <h1 id="section5-header">
-        <span id="section5-span1">Be</span> Better & <br> Built 
-        <span id="section5-span1">Different</span> 
-      </h1>
-
-      <img src="why.png" id="section5-img">
-      <h1 id="section5-why-head">Why ZIDMA Solutions.</h1>
-
-      <div class="section5-why">
-        <p ><span id="section5-span2"> >> </span>We assist you in developing a winning strategy that maximizes your effectiveness while minimizing the time and money required to achieve your objectives 
-        </p>
-        <br>
-        <p ><span id="section5-span2"> >> </span>We believe that viewing difficulties and possibilities from new perspectives and using our curiosity leads to significant and fruitful deviations.  
-        </p>
-        <br>
-        <p ><span id="section5-span2"> >> </span>In a world that is always changing, content rich and visually crowded – we help our clients communicate their difference and stay ahead.
-        </p>
-        <br>
-        <p ><span id="section5-span2"> >> </span> As your creative partner, we will lead you through discovery research to validate your brand’s place in the world. We can help you find your voice as we apply our sector-specific expertise. You’ll advance your brand, in-depth and actionable research findings.
-        </p>
-
-        
-      </div>
-
-
-  </div>
-
-
-  <div class="section6">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#1a1746" fill-opacity="1" d="M0,0L60,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
-    </svg>
-
-   <h1 id="section6-head">Our Recent projects</h1>
-
-    <div class="section6-cards-cont">
-
-      <div class="section6-card">
-        <img src="poster1.jpg">
-      </div>
-
-      <div class="section6-card">
-        <img src="utes-solar.jpg">
-      </div>
-
-      <div class="section6-card">
-        <img src="oil.jpg">
-      </div>
-
-      <div class="section6-card">
-        <img src="auction.jpg">
-      </div>
-
-      <div class="section6-card">
-        <img src="pingo.jpg">
-      </div>
-
-      <div class="section6-card">
-        <img src="suits.jpg">
-      </div>
-      <a href="#" class="section6-button">
-        <h1 id="zoli">Discover More</h1>
-      </a>
-    </div>
-
-
-
-  </div>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 3000,
-        once: true,
-      });
-</script>
-
-  <div class="section7">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="white" fill-opacity="1" d="M0,0L60,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">       </path>
-    </svg>
-
-    <h1 id="section7-head"> Lets Connect</h1>
-    <div class="section7-box-cont">
-
-      <div class="section7-box1">
-        <a href="https://wa.me/+201118567904?text=Hello" id="section7-meassage">
-          <i class="fa-brands fa-whatsapp" id="section7-wapp-animation"></i>
-        </a>
-        <a href="tel:+201025087222">
-          <h1 id="section7-phone-number">(+20) 102 5087 222</h1>
-        </a>
-        <p id="section7-box1-p">Have any enquiries don't hesitate to messege or give us a call</p>
-      </div>
-      <div class="section7-box2">
-        <a href="mailto: omarsoliman2000@gmail.com" id="section7-mail-icon">
-          <i class="fa-solid fa-envelope-open-text" id="section7-mail-animation"></i>
-        </a>
-
-        <a href="mailto: omarsoliman2000@gmail.com" id="section7-mail">
-         <h1>sales@zidmas.com</h1>
-        </a>
-        <p id="section7-box2-p">Have something in your mind let us know</p>
-      </div>
-      <div class="contactform">
-
-        <div class="contactform-cont">
-          <form action="#">
-            <div class="group">      
-             <input type="text" required>
-             <span class="highlight"></span>
-             <span class="bar"></span>
-             <label>Name</label>
-           </div>
-
-            <div class="group">      
-             <input type="text" required>
-             <span class="highlight"></span>
-             <span class="bar"></span>
-             <label>Company Name</label>
-            </div>
-      
-            <div class="group">      
-             <input type="email" required>
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Email</label>
-            </div>
-
-            <div class="group">      
-             <input type="text" required>
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Phone Number</label>
-            </div>
-
-            <textarea placeholder="Message US"></textarea>
-            <input type="submit" value="Send Message" id="send">
-
-      </form>
-        </div>
-        
-      </div>
-    </div>
-
-  </div>
-
-  <div class="section8">
-    <h1 id="section8-head">ZIDMA's Family</h1>
-    <p id="section8-p"> We value adjusting our strategies to each client in order to offer a turnkey solution designed exactly for your needs..</p>
-
-    <div class="slider-cont">  
-      <div id="slider">
-        <ul id="slideWrap"> 
-          <li><img src="street boost computer.jpg"></li>
-          <li><img src="utes.jpg" alt=""></li>
-          <li><img src="pingo-logo.jpg" alt=""></li>
-          <li><img src="ozz.jpg" alt=""></li>
-          <li><img src="campina.jpg" alt=""></li>
-          <li><img src="reclely.jpg" alt=""></li>
-          <li><img src="street boost computer.jpg"></li>
-          <li><img src="utes.jpg" alt=""></li>
-          <li><img src="pingo-logo.jpg" alt=""></li>
-          <li><img src="ozz.jpg" alt=""></li>
-          <li><img src="campina.jpg" alt=""></li>
-          <li><img src="reclely.jpg" alt=""></li>
-        </ul>
-        <a id="prev" href="#">&#8810;</a>
-        <a id="next" href="#">&#8811;</a>
-        </div>
-      </div>
-      <img src="lap.png" id="section8-frame"> 
-  
-  
-  <script>
-    var responsiveSlider = function() {
-
-var slider = document.getElementById("slider");
-var sliderWidth = slider.offsetWidth;
-var slideList = document.getElementById("slideWrap");
-var count = 1;
-var items = slideList.querySelectorAll("li").length;
-var prev = document.getElementById("prev");
-var next = document.getElementById("next");
-
-window.addEventListener('resize', function() {
-  sliderWidth = slider.offsetWidth;
-});
-
-var prevSlide = function() {
-  if(count > 1) {
-    count = count - 2;
-    slideList.style.left = "-" + count * sliderWidth + "px";
-    count++;
-  }
-  else if(count = 1) {
-    count = items - 1;
-    slideList.style.left = "-" + count * sliderWidth + "px";
-    count++;
-  }
-};
-
-var nextSlide = function() {
-  if(count < items) {
-    slideList.style.left = "-" + count * sliderWidth + "px";
-    count++;
-  }
-  else if(count = items) {
-    slideList.style.left = "0px";
-    count = 1;
-  }
-};
-
-next.addEventListener("click", function() {
-  nextSlide();
-});
-
-prev.addEventListener("click", function() {
-  prevSlide();
-});
-
-setInterval(function() {
-  nextSlide()
-}, 4000);
-
-};
-
-window.onload = function() {
-responsiveSlider();  
-}
-
-
   </script>
-
-  </div>
-  <div class="section9">
-    <div class="parallax">
-      <h1 id="section9-haed">Looking for the best digital<br> agency & marketing solution?</h1>
-      <p id="section9-p"> ❝ It’s not what you sell that matters as much as how you sell it!❞ </p>
-      
-      <a href="#" id="section9-btn">
-        <h1>Get Your Project Started &nbsp; <i class="fa-sharp fa-solid fa-paper-plane"></i></h1>
-      </a>
+    <div class="section5">
+      <h1>zidma solutions</h1>
+      <h2>Request Our Company Profile</h2>
+      <img src="eng.png">
+      <form action="#" class="section5-form">
+        <input type="text" name="link" class="section5-form-input" placeholder="&nbsp;&nbsp;Company Name" id="cname" required>
+        <input type="email" name="link" class="section5-form-input" placeholder="&nbsp;&nbsp;Email" id="form-email" required>
+        <input type="submit" value="Get Profile" class="section5-form-send" id="form-btn">
+      </form> 
+    </div>
+    <div class="section6">
+      <span>
+        <h1>Our recent projects</h1>&nbsp;
+        <img src="lightning.png">
+      </span>
+      <div class="sectrion6-card-cont">
+        <div class="section6-card" id="section6-left">
+          <img src="soso.jpg" id="section6-img">
+          <div class="section6-card-cricle">
+            <img src="proicon.png">
+          </div>
+        </div>
+        <div class="section6-card" id="section6-right">
+          <h1>High capacity DC</h1>
+          <h2>Operator: Telecom Egypt</h2>
+          <p>DC system, high capacity up to 4000A in many sites. Such as Almaza, October 2, EL Roda, ... exchanges SOW including Rectifier installation Batteries installation Live swap for loads Acceptance tests</p>
+        </div>
+        <div class="section6-card" id="section6-left">
+            <h1>Generator installation</h1>
+            <h2>Operator: Telecom Egypt</h2>
+            <p>Generator installation as a part of Hybrid system installation in many sites SOW including Installation of ICC cabinet and its batteries. Generator installation and connection with ICC Commissioning, acceptance test</p>
+        </div>
+        <div class="section6-card" id="section6-right">
+          <img src="lolo.jpg" id="section6-img">
+          <div class="section6-card-cricle">
+            <img src="proicon.png">
+          </div>
+        </div>
+        <div class="section6-card" id="section6-left">
+          <img src="koko.jpg" id="section6-img">
+          <div class="section6-card-cricle">
+            <img src="proicon.png">
+          </div>
+        </div>
+        <div class="section6-card" id="section6-right">
+            <h1>DC power system</h1>
+            <h2>Operator: Vodafone</h2>
+            <p>Commissioning, testing according to IEC standard. Modification for alarming connection and setting. Startup and handover to the owner.</p>
+        </div>
+        <div class="section6-card" id="section6-left">
+            <h1>Off grid PV System</h1>
+            <h2>Operator: GASCO </h2>
+            <p>Commissioning, testing according to IEC standard. Modification for alarming connection and setting. Startup and handover to the owner.</p>
+        </div>
+        <div class="section6-card" id="section6-right">
+          <img src="boto.jpg" id="section6-img">
+          <div class="section6-card-cricle">
+            <img src="proicon.png">
+          </div>
+        </div>
+      </div>
+      <div class="section6-blank"></div>
     </div>
 
-  </div>
-  <div class="section10">
-    <h1 id="section10-head">Our Partners .</h1>
-    <div class="section10-cont">
-      <div class="section10-sec">
-        <img src="tawasol.png">
+    <div class="section6-responsive">
+      <h1>Our Recent Projects</h1>
+      <div class="section6-responsive-cont">
+        <div class="section6-responsive-card">
+          <img src="soso.jpg">
+        </div>
+        <div class="section6-responsive-card">
+          <h1>High capacity DC</h1>
+          <h2>Operator: Telecom Egypt</h2>
+          <p>DC system, high capacity up to 4000A in many sites. Such as Almaza, October 2, EL Roda, ... exchanges SOW including Rectifier installation Batteries installation Live swap for loads Acceptance tests</p>
+        </div>
+        <div class="section6-responsive-card">
+          <img src="lolo.jpg">
+        </div>
+        <div class="section6-responsive-card">
+            <h1>Generator installation</h1>
+            <h2>Operator: Telecom Egypt</h2>
+            <p>Generator installation as a part of Hybrid system installation in many sites SOW including Installation of ICC cabinet and its batteries. Generator installation and connection with ICC Commissioning, acceptance test</p>
+        </div>
+        <div class="section6-responsive-card">
+          <img src="koko.jpg">
+        </div>
+        <div class="section6-responsive-card">
+            <h1>DC power system</h1>
+            <h2>Operator: Vodafone</h2>
+            <p>Commissioning, testing according to IEC standard. Modification for alarming connection and setting. Startup and handover to the owner.</p>
+        </div>
+        <div class="section6-responsive-card">
+          <img src="boto.jpg">
+        </div>
+        <div class="section6-responsive-card">
+            <h1>Off grid PV System</h1>
+            <h2>Operator: GASCO </h2>
+            <p>Commissioning, testing according to IEC standard. Modification for alarming connection and setting. Startup and handover to the owner.</p>
+        </div>
       </div>
-      <div class="section10-sec">
-        <img src="meta.png">
-      </div>
-      <div class="section10-sec">
-        <img src="google.jpg">
-      </div>
-      
     </div>
-  </div>
-
+    <div class="section7">
+      <img src="work-eng.jpg" id="section7-bg">
+      <div class="section7-desc">
+        <img src="bulb.png" id="bulb">
+        <img src="bulb-transion.png" id="bulb-transition">
+        <h1>Why UTES Egypt</h1>
+        <hr id="section7-line">
+        <ul>
+          <li>We provide our customers with a wide range of products and services.</li>
+          <li>We build our operations on long-term relationships</li>
+          <li>Our service teams make sure that you get the product that suits your needs best.</li>
+          <li>Our expertise covers the construction, installation and testing phases ensuring a flexible start-up for operations. </li>
+        </ul>
+      </div>
+    </div>
+    <div class="section8">
+      <h1>Latest articles and news</h1>
+      <div class="section8-card-cont">
+        <div class="section8-card">
+          <img src="jaja.jpg">
+          <h2>Advantages of Lithium battery </h2>
+          <p>Lithium Iron Phosphate Battery is a rechargeable types of battery which features lithium ions that moves from the negative electrode to the positive electrode...   </p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="section8-card">
+          <img src="li battery.jpg">
+          <h2>Benefits of Sustainable Energy for Your Business</h2>
+          <p>Sustainable energy solutions for your business can offer cost savings, environmental benefits, and improved brand reputation. They can also provide energy independence and regulatory compliance... </p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="section8-card">
+          <img src="rere.jpg">
+          <h2>This is another test</h2>
+          <p>Lithium Iron Phosphate Battery is a rechargeable types of battery which features lithium ions that moves from the negative electrode to the positive electrode...   </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="section8-blank"></div>
   <div class="footer">
 
     <div class="footer-cont">
       <div class="footer-sec">
-        <h1 id="footer-sec-head">About Us</h1>
-        <ul id="footer-sec-ul"> 
-          <li><a href="#">Company Profile</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Affiliate Program</a></li>
-        </ul>        
-      </div>
+        <h1>Contact-us</h1>
+        <ul>
 
-      <div class="footer-sec">
-        <h1 id="footer-sec-head">Support</h1>
-        <ul id="footer-sec-ul">
-          <li><a href="#">Frequently Asked</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Web Development & Design </a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>  
-      </div>
-      <div class="footer-sec">
-        <h1 id="footer-sec-head">Our Services</h1>
-        <ul id="footer-sec-ul">
-          <li><a href="services/services-pages/seo/index.html">Search Engine Optimization</a></li>
-          <li><a href="services/services-pages/sem/index.html">Search Engine Marketing</a></li>
-          <li><a href="services/services-pages/web/index.html">Web Development & Design </a></li>
-          <li><a href="services/services-pages/smm/index.html">Social Media Markering</a></li>
-          <li><a href="services/services-pages/email/index.html">E-Mail Marketing</a></li>
-          <li><a href="services/services-pages/app/index.html">Mobile App development</a></li>
-          <li><a href="#">Reservation QR Systems </a></li>
-        </ul>    
-      </div>
+          <li>
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>
+              <h1>Phone Inquiry</h1>
+              <a href="tel:+20102508333">(+20)102 508 7333</a>
+            </span>
+          </li>
 
-      <div class="footer-sec">
-
-        <h1 id="footer-sec-head">ZIDMA Solutions</h1>
-        <p>We intend to provide our clients with the best customized and practical solutions to expand their online and offline presence and achieve their business goals through providing smart solutions, a creative team, friendly service, fast delivery, and ongoing support.</p>
-
-        <ul id="footer-social">
-          <a href="https://www.facebook.com/"><li><i class="fa-brands fa-square-facebook"></i></li></a>
-          <a href="https://www.instagram.com/"><li><i class="fa-brands fa-instagram instagram"></i></li></a>
-          <a href="#"><li><i class="fa-brands fa-whatsapp"></i></li></a>
-          <a href="#"><li><i class="fa-brands fa-behance"></i></li></a>
-          <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              <h1>Send Email</h1>
+              <a href="mailto: ahabieb@utesegypt.com">ahabieb@utesegypt.com</a>
+            </span>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>
+              <h1>Visit The Office</h1>
+              <p>18 Shawky Abd Rabo, Naser City</p>
+            </span>
+          </li>
         </ul>
-
       </div>
-      
+      <div class="footer-sec" id="footer-services">
+        <h1>Our Services</h1>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Power equipment supplying</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Power networking support</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Battery testing</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Maintenance</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Power system installation</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>System design</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-sec" id="footer-about">
+        <h1>About-us</h1>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Who WE Are</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Our Vission</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Mission Statment</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Global Presence</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Terms and Conditions</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-sec">
+        <img src="footer-logo.png">
+        <span id="footer-desc">
+          <p>We have established a reputation as a leader in the high growth emerging market for energy and renewable energy sector, servicing telecommunication and ultimately the growing end-consumer market </p>
+        </span>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
     </div>
-
-  </div>
-  <div class="copyright-footer">
-    <p> © Copyrights 2020 ZIDMA Solutions All rights reserved.</p>
-  </div>
-
-
-
-  
-
 </body>
 </html>

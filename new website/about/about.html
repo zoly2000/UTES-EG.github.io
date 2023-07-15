@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Us</title>
+    <link rel = "icon" href = "../utes icon.png" type = "image/x-icon">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+    <link rel="stylesheet" href="section4.css">
+    <link rel="stylesheet" href="section5.css">
+    <link rel="stylesheet" href="section6.css">
+
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="loader.css">
+
+    <link rel="stylesheet" href="small-mobile.css" media="screen and (min-width: 250px) and (max-width: 360px)">
+
+    <link rel="stylesheet" href="responsive.css" media="screen and (min-width: 360px) and (max-width: 501px)">
+
+    <link rel="stylesheet" href=" rot-mobile.css" media="screen and (min-width: 501px) and (max-width: 767px)">
+
+    <link rel="stylesheet" href=" tablet-responsive.css" media="screen and (min-width: 767px) and (max-width: 1023px)">
+
+    <link rel="stylesheet" href=" small-sc-responsive.css" media="screen and (min-width: 1023px) and (max-width: 1300px)">
+
+
+
+    
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a5c7b19376.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="content">
+
+      <div class="logo">
+
+        <a href="index.html">
+         <img alt="UTES" src="../web.png"
+         width="75" height="80">
+      </a>
+
+
+      </div>
+
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about/about.html">About</a></li>
+        <li><a href="../service/services.html">Services</a></li>
+        <li><a href="../products/products.html">Products</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="#"> <i class="fa fa-globe" style="font-size: 23px;"></i></a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+  <div class="nav-section"></div>
+  <div class="section1">
+    <h1 id="section1-header">About-Us</h1>
+    <div class="parallax"></div>
+  </div>
+  <div class="section2">
+    <div class="section2-top">
+      <div class="section2-top-card">
+        <span>
+          <h1>About-Us</h1>
+          <img src="../lightning.png">
+        </span>
+        <h2>As power experts, we are trained to help Electrical managers sort through the technical chatter and develop real solutions that fit their needs and their budget.   </h2>
+        <h3>Leading Total Solution Provider</h3>
+        <span>
+          <hr id="section2-line1">
+          <hr id="section2-line2">
+        </span>
+      </div>
+      <div class="section2-top-card">
+        <p>Since UTES’ inception in 2012, we have established a reputation as a leader in the high growth emerging market for energy and renewable energy sector,servicing telecommunication and ultimately the growing end-consumer market through critical energy requirements, which also benefits our markets' broader.
+        <br><br>
+        The power industry is changing rapidly, Discussions often focus on better
+        energy efficiency, high-density servers and data centers. These trends come
+        at a time when Electrical Energy Managers are under tremendous pressure to
+        lower equipment costs and operating expenses. </p>
+      </div>
+    </div>
+    <div class="section2-end">
+      <div class="section2-end-card">
+        <img src="eng1.jpg">
+        <h2>01</h2>
+        <h1>TURNKEY SOLIUTIONS DESIGNED EXACTLY FOR YOUR NEEDS</h1>
+      </div>
+      <div class="section2-end-card">
+        <img src="eng2.jpg">
+        <h2>02</h2>
+        <h1>SAVE ENERGY FOR THE WORlD TAKE YOUR BUILDING OFF THE GRID</h1>
+      </div>
+      <div class="section2-end-card">
+        <img src="eng3.jpg">
+        <h2>03</h2>
+        <h1>TESTING ACCORDING TO THE IEC STANDARDS</h1>
+      </div>
+    </div>
+  </div>
+  <div class="section3">
+    <div class="section3-card-cont">
+      <div class="section3-card" id="section3-left">
+        <h1>Key Success Factors</h1>
+        <p>UTES provides its customers with a wide range of products and services. We build our operations on long term relationships and on innovative, efficient optimized solutions based on</p>
+        <ul>
+          <li><img src="durability.png"> Durability</li>
+          <li><img src="felx.png"> Produce Innovative Solutions</li>
+          <li><img src="sus icon.png"> Flexible Cost-Effective Solutions</li>
+        </ul>
+      </div>
+      <div class="section3-card" id="section3-right">
+        <div class="container">
+          <div class="overlay">
+            <div class="text">
+              <h1>Our Vision</h1>
+              <p>At UTES Egypt we envision to become a pre-eminent supplier of technical and engineering of Power quality total solution services. We aim for organic growth through further global expansion of our client base and through building long-term relationships with our existing customers.</p>
+            </div>
+          </div>
+          <img src="vission-img.jpg">
+        </div>
+        <div class="container">
+          <div class="overlay">
+            <div class="text">
+              <h1>Mission Statment</h1>
+              <p>Our mission is to provide consistently high quality services to our clients and to continuously seek further improvements in the quality and standards of our services. We are dedicated to provide customized and optimal solutions to the challenges our clients seek our help with.</p>
+            </div>
+          </div>
+          <img src="mission-img.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section4">
+      <h1>Global Presence</h1>
+      <h2>Our organization is built to fulfill Today’s and Tomorrow’s customer requirements. Whenever and wherever support is needed in all power applications, one unrevealed word is sufficient enough. UTES is organized to achieve various business and market-based units.Our long term plan is to launch regional units to ensure that our products and services the best possible service in Egypt and expandable to cover North Africa and the Middle East market as well</h2>
+  </div>
+  <div class="section5">
+    <div class="section5-top">
+      <div class="section5-top-card">
+        <img src="abmid1.jpg">
+        <h1>Our service teams make sure that you get the product that suits your needs best.</h1>
+      </div>
+      <div class="section5-top-card">
+        <img src="abmid2.jpg">
+        <h1>Our expertise covers the construction, installation and testing phases, ensuring a flexible start-up for operations.</h1>
+      </div>
+      <div class="section5-top-card">
+        <img src="abmid3.jpg">
+        <h1>Maintenance and training services help our customers for secured and proper operation and maximum system reliability.</h1>
+      </div>
+    </div>
+    <div class="section5-end">
+      <div class="section5-end-card">
+        <img src="abmid4.png">
+      </div>
+      <div class="section5-end-card">
+        <img src="abmid5.jpg">
+      </div>
+    </div>
+    <h1>UTES’s service concept for power systems covers engineering, consulting and training, as well as installation, commissioning and maintenance.</h1>
+  </div>
+  <div class="section6">
+    <div class="section6-cards-cont">
+      <div class="section6-card">
+        <h1>12<sup>+</sup> Years</h1>
+        <h2>Of Experience & Record</h2>
+      </div>
+      <div class="section6-card">
+        <h1>90<sup>+</sup></h1>
+        <h2>Successful Projects</h2>
+      </div>
+      <div class="section6-card">
+        <h1>500<sup>+</sup></h1>
+        <h2>Systems Installed</h2>
+      </div>
+      <div class="section6-card">
+        <h1>40<sup>+</sup></h1>
+        <h2>Trusted Clients</h2>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+
+    <div class="footer-cont">
+      <div class="footer-sec">
+        <h1>Contact-us</h1>
+        <ul>
+
+          <li>
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>
+              <h1>Phone Inquiry</h1>
+              <a href="tel:+20102508333">(+20)102 508 7333</a>
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              <h1>Send Email</h1>
+              <a href="mailto: ahabieb@utesegypt.com">ahabieb@utesegypt.com</a>
+            </span>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>
+              <h1>Visit The Office</h1>
+              <p>18 Shawky Abd Rabo, Naser City</p>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-sec" id="footer-services">
+        <h1>Our Services</h1>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Power equipment supplying</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Power networking support</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Battery testing</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Maintenance</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Power system installation</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>System design</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-sec" id="footer-about">
+        <h1>About-us</h1>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Who WE Are</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Our Vission</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Mission Statment</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Global Presence</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Terms and Conditions</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-sec">
+        <img src="../footer-logo.png">
+        <span id="footer-desc">
+          <p>We have established a reputation as a leader in the high growth emerging market for energy and renewable energy sector, servicing telecommunication and ultimately the growing end-consumer market </p>
+        </span>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
+

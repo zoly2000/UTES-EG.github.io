@@ -1,0 +1,58 @@
+.section3{
+	width: 100%;
+	height: 100%;
+}
+
+.section3-cont{
+	width: 54%;
+	height: 100%;
+	margin-top: 10%;
+	margin-left: 13%;
+}
+
+.section3-cont h1{
+	color: #081467;
+}
+
+.section3-cont p{
+	color: black;
+	margin-top: 1%;
+	width: 95%;
+}
+
+.section3-cont-box{
+	margin-top: 5%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+  	flex-wrap: wrap;
+  	gap: 20px; 
+  }
+
+.section3-box{
+	width: 100%;
+	height: 50px;
+	border: 1px solid #cbc9c9;
+	display: inline-flex;
+}
+
+.section3-box img{
+	width: 40px;
+	height: 40px;
+	margin-top: 0.6%;
+	margin-left: 1.5%;
+}
+
+.section3-box h1{
+	font-size: 18px;
+	color: black;
+	margin-top: 1.5%;
+	margin-left: 1.5%;
+	font-weight: 500;
+}
+
+.section3-palank{
+	width: 100%;
+	height: 30px;
+	background-color: white;
+}

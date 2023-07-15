@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightning Rod</title>
+    <link rel = "icon" href = "../../utes icon.png" type = "image/x-icon">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+
+    <link rel="stylesheet" href="../../footer.css">
+    <link rel="stylesheet" href="loader.css">
+
+    <link rel="stylesheet" href="small-mobile.css" media="screen and (min-width: 250px) and (max-width: 360px)">
+
+    <link rel="stylesheet" href="responsive.css" media="screen and (min-width: 360px) and (max-width: 501px)">
+
+    <link rel="stylesheet" href=" rot-mobile.css" media="screen and (min-width: 501px) and (max-width: 767px)">
+
+    <link rel="stylesheet" href=" tablet-responsive.css" media="screen and (min-width: 767px) and (max-width: 1023px)">
+
+    <link rel="stylesheet" href=" small-sc-responsive.css" media="screen and (min-width: 1023px) and (max-width: 1300px)">
+
+
+
+    
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a5c7b19376.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="content">
+
+      <div class="logo">
+
+        <a href="index.html">
+         <img alt="UTES" src="../../web.png"
+         width="75" height="80">
+      </a>
+
+
+      </div>
+
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../about/about.html">About</a></li>
+        <li><a href="../service/services.html">Services</a></li>
+        <li><a href="../../products/products.html">Products</a></li>
+        <li><a href="../../contact/contact.html">Contact</a></li>
+        <li><a href="../../blog/blog.html">Blog</a></li>
+        <li><a href="#"> <i class="fa fa-globe" style="font-size: 23px;"></i></a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+  <div class="nav-section"></div>
+  <div class="section1">
+    <h1 id="section1-header">Lightning Rod</h1>
+    <div class="parallax" style="background-image: url('rod-bg.jpg');"></div>
+  </div>
+  <div class="section2">
+    <div class="section2-cont-cards">
+      <div class="section2-top-left">
+        <img src="../lirod.jpg">
+        <h1>Lightning Rod</h1>
+        <h2>Service Beyond Expectations</h2>
+        <hr id="section2-top-left-line">
+        <p>Our Lightning Rod products are designed to provide reliable protection against lightning strikes for a wide range of industrial and commercial applications. We understand the potential damage that lightning strikes can cause to businesses and facilities, and we strive to deliver the best possible solutions to meet our clients' needs. Our Lightning Rod products are available in a variety of sizes and configurations to meet the specific needs of each application. We use the latest technology and equipment to ensure that our Lightning Rod products are of the highest quality and reliability.
+        </p>
+        <div class="section2-mid-left">
+          <div class="section2-mid-left-card">
+            <img src="../../sicon.png">
+            <h1>SAVE ENERGY FOR THE WORLD</h1>
+          </div>
+          <div class="section2-mid-left-card">
+            <img src="../../quality.png">
+            <h1>HIGH QUALITY SERVICE TO OUR CLIENTS</h1>
+          </div>
+          <div class="section2-mid-left-card">
+            <img src="../../wherever.png">
+            <h1>READY TO HELP WHENEVER AND WHEREVER</h1>
+          </div>
+        </div>
+        <div class="section2-end-left">
+          <div class="section2-end-left-card">
+            <img src="better.jpg">
+            <div class="section2-end-left-card-box">
+              <h1>Get The Better Service</h1>
+            </div>
+          </div>
+          <div class="section2-end-left-card">
+            <img src="talk.jpg">
+            <div class="section2-end-left-card-box">
+              <h1>Talk With Our Experts</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section2-top-right">
+        <div class="section2-top-right-cont">
+          <div class="section2-top-right-cards">
+            <img src="strips.png" alt="Avatar" class="image">
+            <h1>Industrial Batteries</h1>
+            <img src="inbattery.png" class="img-before">
+            <a href="industrial-batteries.html">
+              <div class="overlay  overlayLeft">
+                <div class="text">Industrial Batteries</div>
+                <img src="inbattery.png" class="img-after">
+              </div>
+            </a>
+          </div>
+          <div class="section2-top-right-cards">
+            <img src="strips.png" alt="Avatar" class="image">
+            <h1>Rectifiers</h1>
+            <img src="rectifire.png" class="img-before">
+            <a href="rectifire.html">
+              <div class="overlay  overlayLeft">
+                <div class="text">Rectifiers</div>
+                <img src="rectifire.png" class="img-after">
+              </div>
+            </a>
+          </div>
+          <div class="section2-top-right-cards">
+            <img src="strips.png" alt="Avatar" class="image">
+            <h1>Distribution Panels</h1>
+            <img src="dispannel.png" class="img-before">
+            <a href="distribution-panels.html">
+             <div class="overlay  overlayLeft">
+                <div class="text">Distribution Panels</div>
+                <img src="dispannel.png" class="img-after">
+              </div>
+            </a>
+          </div>
+          <div class="section2-top-right-cards">
+            <img src="strips.png" alt="Avatar" class="image">
+            <h1>UPS</h1>
+            <img src="ups.png" class="img-before">
+            <a href="ups.html">
+              <div class="overlay  overlayLeft">
+                <div class="text">UPS</div>
+                <img src="ups.png" class="img-after">
+              </div>
+            </a>
+          </div>
+          <div class="section2-top-right-cards">
+            <img src="strips.png" alt="Avatar" class="image">
+            <h1>PV Systems</h1>
+            <img src="pv.png" class="img-before">
+            <a href="pv-systems.html">
+              <div class="overlay  overlayLeft">
+                  <div class="text">PV Systems</div>
+                  <img src="pv.png" class="img-after">
+              </div>
+            </a>
+          </div>
+          <div class="section2-top-right-cards" id="section2-top-right-cards-active">
+            <h1>Lightning Rod</h1>
+            <img src="lightrod.png" class="img-after">
+            </div>
+        </div>
+        <div class="section2-mid-right-cont">
+          <img src="right-sec.jpg">
+          <h1>Got any Questions? Call us today!</h1>
+          <i class="fa-solid fa-phone"></i>
+          <div class="section2-mid-right-cont-contact">
+            <a href="tel:+20102508333">(+20)102 508 7333</a>
+            <hr>
+            <a href="mailto: ahabieb@utesegypt.com">ahabieb@utesegypt.com</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="section3">
+    <div class="section3-cont">
+      <h1>Why UTES Help You Better?</h1>
+      <p>our commitment to customization, expertise, quality, and ongoing support makes our products special and sets us apart from competitors. We are dedicated to providing the best possible solutions to meet our clients' needs and building long-term relationships based on trust, expertise, and exceptional service.</p>
+      <div class="section3-cont-box">
+        <div class="section3-box">
+          <img src="customized.png">
+          <h1>Customized solutions tailored to each client</h1>
+        </div>
+        <div class="section3-box">
+          <img src="expertise.png">
+          <h1>Latest technology and industry best practices</h1>
+        </div>
+        <div class="section3-box">
+          <img src="quality.png">
+          <h1>Our products are of the highest quality and reliability</h1>
+        </div>
+        <div class="section3-box">
+          <img src="support.png">
+          <h1>Ongoing support, maintenance, and emergency repair services</h1>
+        </div>
+      </div>
+    </div>
+    <div class="section3-palank"></div>
+  </div>
+      <div class="footer">
+
+    <div class="footer-cont">
+      <div class="footer-sec">
+        <h1>Contact-us</h1>
+        <ul>
+
+          <li>
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>
+              <h1>Phone Inquiry</h1>
+              <a href="tel:+20102508333">(+20)102 508 7333</a>
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              <h1>Send Email</h1>
+              <a href="mailto: ahabieb@utesegypt.com">ahabieb@utesegypt.com</a>
+            </span>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>
+              <h1>Visit The Office</h1>
+              <p>18 Shawky Abd Rabo, Naser City</p>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-sec" id="footer-services">
+        <h1>Our Services</h1>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Power equipment supplying</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Power networking support</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Battery testing</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Maintenance</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Power system installation</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>System design</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-sec" id="footer-about">
+        <h1>About-us</h1>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Who WE Are</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Our Vission</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Mission Statment</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Global Presence</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Terms and Conditions</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right"> &nbsp;&nbsp; </i>Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-sec">
+        <img src="../../footer-logo.png">
+        <span id="footer-desc">
+          <p>We have established a reputation as a leader in the high growth emerging market for energy and renewable energy sector, servicing telecommunication and ultimately the growing end-consumer market </p>
+        </span>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
