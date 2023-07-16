@@ -1,0 +1,278 @@
+@media only screen and (min-width: 1023px) and (max-width: 1300px) {
+	.section2{
+	width: 100%;
+	height: 100%;
+
+}
+.section2-top{
+	width: 100%;
+    margin-top: 13%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	gap: 50px;
+}
+
+.section2-top-card{
+	width: 100%;
+	height: 100%;
+}
+
+#section2-img1{
+	width: 85%;
+	height: 100%;
+	margin-top: 0%;
+	margin-left: 15%;
+}
+
+.section2-top-card span{
+	margin-top: 2%;
+	display: inline-flex;
+	width: 100%;
+}
+
+.section2-top-card span h1{
+	font-size: 18px;
+	font-weight: 500;
+	font-family: sans-serif;
+	color: #8f9090;
+}
+
+.section2-top-card span img{
+	width: 17px;
+	height: 20px;
+	margin-top: 0.2%;
+	margin-left: 0.5%;
+}
+
+.section2-top-card h2{
+	margin-top: 1%;
+	font-size: 22px;
+}
+
+.section2-top-card h3{
+	margin-top: 2%;
+	font-size: 18px;
+	font-weight: normal;
+	color: #fc9206;
+	font-family: sans-serif;
+}
+
+#section2-line1{
+	margin-top: 2%;
+	width: 80px;
+	border: 3px solid #081467;
+}
+
+#section2-line2{
+	margin-top: 2%;
+	margin-left: 0.5%;
+	width: 14px;
+	border: 3px dashed #081467;
+}
+
+.section2-top-card p{
+	width: 95%;
+	margin-top: 2%;
+	font-family: sans-serif;
+	font-size: 17px;
+	line-height: 28px;
+}
+
+.section2-end{
+	width: 100%;
+    margin-top: 1%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	gap: 25px;
+}
+
+.section2-end-card{
+	width: 100%;
+	height: 100%;
+}
+
+#section2-img2{
+	max-width: 80%;
+	margin-top: 0%;
+	margin-left: 10%;
+}
+
+.section2-end-card-divs-cont{
+	width: 100%;
+    margin-top: 0%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+	gap: 20px;
+}
+
+.section2-end-card-divs{
+	width: 100%;
+	height: 100%;
+}
+
+.section2-end-card-divs img{
+	position: relative;
+	width: 50%;
+	margin-top: 50%;
+	margin-left: 50%;
+	-ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.section2-end-card-divs h1{
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: -25%;
+}
+.section4{
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 1950px;
+}
+
+.section4-cards-cont{
+  width: 95%;
+  margin-left: 2.5%;
+   margin-top: 0%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
+  gap: 60px;
+}
+.section4-card{
+	width: 100%;
+	height: 500px;
+}
+.section4-card h1{
+  font-size: 35px;
+  color: #081467;
+  margin-top: 10%;
+  margin-left: 1%;
+}
+
+.section4-card ul{
+  margin-top: 5%;
+  margin-left: 5%;
+  line-height: 50px;
+  list-style: none;
+}
+.section4-card a h1{
+  font-size: 23px;
+  margin-top: 5%;
+  margin-left: 5%;
+  font-weight: 600;
+  color: #081467;
+}
+ .thefront img{
+  width: 35%;
+  height: 30% auto;
+  margin-top: 12%;
+  margin-left: 5%;
+ }
+
+.theback h1{
+  color: white;
+  font-size: 32px;
+  margin-top: 4%;
+  margin-left: 5%;
+  text-align: left;
+  font-family: sans-serif;
+}
+.tab-nav li {
+  margin-top: 30%;
+  padding: 20px 15px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab-nav li.active {
+  color: #081467;
+  transform: scale(1.2);
+}
+.section5{
+	width: 100%;
+	height: 250px;	
+	background-color: #081467;
+}
+.section5 h1{
+	margin-top: 0%;
+	 visibility: hidden;
+	 font-size: 1px;
+}
+.section5 h2{
+	margin-top: 3%;
+	color: white;
+	text-align: center;
+}
+.section5 img{display: none;
+	position: absolute;
+	width: 12%;
+	height: 22%;
+	margin-top: -2%;
+	opacity: 0.1;
+}
+.section5-form{
+    margin-top: 4%;
+	margin-left:3%;
+	padding-left:0px;
+	width: 97%;
+}
+
+.section5-form-input{
+ 	width: 35%;
+ 	height: 50px;
+ 	border-radius: 5px;
+    border: none;
+}
+
+.section5-form-send{
+	width: 20%;
+	height: 50px;
+	background-color: transparent;
+	border: 1px solid white;
+	cursor: pointer;
+	border-radius: 10px;
+	font-size: 16px;
+	color:white;
+	font-weight: 600;
+
+}
+
+.section5-form-send:hover{
+  border: none;
+  background-color: #081467;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+#form-email{
+	margin-left: 1%
+}
+
+#form-btn{
+	margin-left: 1%;
+}
+.footer{margin-top: 5%;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+
+.footer-cont{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap:10px;
+  width: 100%;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+.footer-sec{
+  width: 100%;
+  height: 100%;
+}
+}
+}

@@ -1,0 +1,94 @@
+@media only screen and (min-width: 1023px) and (max-width: 1300px) {
+
+.section2-end{
+  width: 100%;
+  margin-top: 15%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 40px;
+}
+
+.section2-end-card h2{
+  z-index: -1;
+  position: absolute;
+  margin-top: -2%;
+  margin-left: 15%;
+  font-size: 90px;
+  color: #fc9206;
+  opacity: 0.2; 
+}
+
+.section6{
+  width: 100%;
+  height: 100%;
+}
+.section6 img{
+  width: 100%;
+  height: 100%;
+
+}
+.section6-cards-cont{
+  width: 100%;
+  margin-top: 15%;
+  margin-left: 0%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
+  gap: 60px;
+  position: relative;
+    background-image: url('wind2.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.section6-cards-cont::before{
+  content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.86;
+}
+
+.section6-card{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.section6-card h1{
+  font-size: 50px;
+  color: #081467;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.section6-card h2{
+  font-size: 22px;
+  color: #1631e5;
+  text-align: center;
+    margin-top: 0%;
+}
+.footer{margin-top: 5%;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+
+.footer-cont{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap:10px;
+  width: 100%;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+.footer-sec{
+  width: 100%;
+  height: 100%;
+}
+}
